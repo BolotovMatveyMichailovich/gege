@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon"  href="trueimg\favicon-32x32.png" size="32x32" type="image/png">
+        <link rel="stylesheet" href="style\style.css" type="text/css">
+        
+        <title>Bolotov</title>
+    </head>
+    
+    <body> 
+        <script src="myJSforOpros.js"></script>
+       <section id = "form">
+<div id="container_demo" >
+    <!-- спрятанный якорь, чтобы избежать прыжков http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+    <a class="hiddenanchor" id="tosubscribe"></a>
+    <a class="hiddenanchor" id="tologin"></a>
+    <div id="wrapper">
+        <div id="login" class="animate form">
+            <form  name="main" autocomplete="on">
+                <h1>Вход</h1>
+                <p>
+                    <label for="username" class="qw" data-icon="u" > Ваш email или логин </label>
+                    <input id="Fid" name="nameInput" class="Fclass" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                </p>
+                <p>
+                    <label for="password" class="qw" data-icon="p"> Ваш пароль </label>
+                    <input id="Fid" name="password" class="Fclass" required="required" type="password" placeholder="eg. X8df!90EO" />
+                </p>
+                <p class="keeplogin">
+                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                    <label for="loginkeeping">Запомнить меня</label>
+                </p>
+                <p class="login button">
+                    <input type="submit" value="Вход" onclick="formSubmit()"/>
+                </p>
+                <p class="change_link">
+                    Не зарегестрирован ? Нужно исправить.
+                    <a href="#tosubscribe" class="to_subscribe">Зарегестрироваться</a>
+                </p>
+                
+                <p class="reset"><input type="reset" onclick="formReset()" value="Сброс данных">  </p>
+
+               
+            </form>
+        </div>
+        
+        <div id="subscribe" class="animate form">
+            <form  action="mysuperscript.php" autocomplete="on">
+                <h1> Регистрация </h1>
+                <p>
+                    <label for="usernamesignup" class="qq" data-icon="u">Ваше имя</label>
+                    <input id="Fid" name="usernamesignup" class="Fclass" required="required" type="text" placeholder="mysuperusername690" />
+                </p>
+                <p>
+                    <label for="emailsignup" class="qq" data-icon="e" > Ваш email</label>
+                    <input id="Fid" name="emailsignup" class="Fclass" required="required" type="text" placeholder="mysupermail@mail.com"/>
+                </p>
+                <p>
+                    <label for="passwordsignup" class="qq" data-icon="p">Ваш пароль </label>
+                    <input  name="passwordsignup" id="Fid" class="Fclass" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                </p>
+                
+                    <p>
+                        <label for="date" > Дата рождения: </label>
+                        <input type="date" id="Fid" class="Fclass" name="date"/>
+                    </p>
+                    <p>
+                        Телефон<input type="text" class="Fclass" data-format="+7 (ddd) ddd-dd-dd" placeholder="89005553535"/></p>
+                <p>
+                    <label for="passwordsignup_confirm"  class="qq" data-icon="p">Подтвердите Ваш пароль </label>
+                    <input id="Fid" class="Fclass" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                </p>
+                <p>
+                    <label for="URL" class="qq" data-icon="p"> Ваш URL </label>
+                    <input id="Fid" name="URL" class="Fclass" required="required" type="URL" placeholder="http" />
+                </p>
+                <p class="signin button">
+                    <input type="submit" value="Зарегестрироваться" onclick="formSubmit()"/>
+                    <input  type="reset" onclick="formReset()" value="Сбросить данные" />
+                </p>
+                <p class="change_link">
+                    Уже зарегестрирован?
+                    <a href="#tologin" class="to_subscribe"> Вход </a>
+                </p>
+                
+                
+                
+            </form>
+        </div>
+    </div>
+</div>
+</section> 
+
+</body>
+</html>
