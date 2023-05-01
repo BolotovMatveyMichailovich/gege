@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;1,400&family=Kelly+Slab&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     background: url('trueimg/topphone12.jpeg')
     no-repeat center top;
+    
     background-size: 100%;
     width: 100;
     height: 100;
@@ -44,27 +49,72 @@ li {
     transition: .5s;
 }
 
-li a {
+nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     transition: .5s;
     padding: 10px;
     font-family: 'Kelly Slab', cursive;
+    cursor: pointer;
 }
-
-
-ul:hover li a {
+nav ul:hover li  a {
     filter: blur(5px);
+    
 }
 
-ul:hover li a:hover {
+nav ul li:hover   a {
+    filter: blur(0px);
+    color:#000000;
+    
+    
+}
+
+nav ul:hover li a:hover {
     font-size: 30px;
     filter: blur(0px);
     background-color: #000000;
     color:#fff; 
     
-  
 }
+
+
+
+
+
+nav ul li ul {
+    
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    left: 260px;
+    padding: auto;
+    top: 185px;
+    
+    display: none;
+    font-size: 30px;
+    
+    color:#fff; 
+    
+}
+nav ul li:hover > ul {
+    display: initial;
+    
+    
+}
+
+nav ul li ul li{
+
+margin-bottom: 1.5em;
+font-size: 22px;
+
+ 
+}
+
+ 
+
+
 
 .imgSecond
 {
@@ -94,6 +144,7 @@ ul:hover li a:hover {
     font-family:'Kelly Slab', cursive;
     font-size:18px;
     border-radius: 5px;
+    text-decoration: none;
     }
     .topbutton:hover{
         color:#00bfff;
@@ -206,12 +257,100 @@ div #Textmost
     margin-top: 15%;
     text-align:center;
     color:#ffffff;
-    
-   
-
 
 }
-******************************************************************
+
+.AllCategory
+{
+    display:block;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Kelly Slab', cursive;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    
+    text-align:center;
+    color:#000000;
+}
+
+.muzeiimg
+{
+    display: block;
+    position: relative;
+    border-radius: 4px 4px 4px 4px; 
+    background-color: rgb(255, 255, 255); /* Цвет фона */
+    height: 450px;
+    width: 950px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.CategoryAll
+{
+    background: url('trueimg/topphone12.jpeg')
+    no-repeat center top;
+    position: relative;
+    background-size: 100%;
+    width: 100;
+    height: 100;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    background-color:#f2f2f2;
+
+}
+
+.dws-text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 100;
+    transition: .5s ease;
+}
+
+.dws-text h1
+{
+    height: 320px;
+    width: 950px;
+    font-size: 100px;
+    
+    text-align: center;
+}
+.muzei
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    width: 950px;
+   
+    position: relative;
+    overflow: hidden;
+    
+ 
+}
+.muzei a
+{
+    display: block;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.muzei:hover .dws-text
+{
+  top: 225px;
+    opacity: 1;
+    background:  rgba(0, 0, 0, 0.8); /* Цвет фона */
+    
+}
+
+
+
 
 
 
@@ -225,6 +364,7 @@ div #Textmost
   max-height: 481px;
   position:relative;
   margin-top: 40px;
+  margin-bottom: 60px;
   margin-left: auto;
     margin-right: auto ;
     border-radius: 5px;
@@ -292,6 +432,11 @@ div #Textmost
   top: 0;
 }
 
+.Alldot
+{
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -324,6 +469,65 @@ div #Textmost
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+
+.plan{
+    
+    background-size: 100%;
+    width: 100;
+    height: 100;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 50px;
+    padding-bottom: 275px;
+
+    
+}
+
+.Cplan
+{
+    color:#ffffff;
+    display:block;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Kelly Slab', cursive;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    
+    text-align:center;
+   
+}
+.Cplan2
+{
+    color:#ffffff;
+    display:block;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Kelly Slab', cursive;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    
+    text-align:center;
+   
+}
+
+.vibor{
+    display: block;
+    margin:auto;
+    margin-top: 0px;
+    margin-right: -8px;
+    float: right;
+    width: 50%;
+    height: 50%;
+}
+
+
+
+.foter
+{
+color:#ffffff;
 }
 
 

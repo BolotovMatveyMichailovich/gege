@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style3.css" type="text/css">
     
-    
+   
    
     <title>Disarmd</title>
     <title>Document</title>
@@ -16,7 +16,7 @@
 </head>
 
 <body>
- 
+    
     <div>
 
     
@@ -29,14 +29,27 @@
     <form action="opros.html" target="_blank">
         <button class="but1" id = "but11">ВХОД ИЛИ РЕГИСТРАЦИЯ</button>
 
-       <ul >
-        <li class ="menu1"> <a href="#"> PHOTOS</a></li>
-        <li> <a href="#"> ABOUT</a></li>
-        <li> <a href="#"> PLAN</a></li>
-        <li> <a href="#"> CONTACTS</a></li>
+     
+
+       
+ <header>
+    <nav>
+       <ul class = "root-nav">
+        <li class ="menu1"> <a href="#categoriayPhoto" class = "yakor"> PHOTOS &blacktriangledown;</a>
+        <ul class = "podCategory">
+            <li class="qwe"><a href="#allCategorii">All categories</a></li>
+            <li><a href="#">Catagery2</a></li>
+            <li><a href="#">Catagery3</a></li>
+        </ul>
+        </li>
+        <li class ="menu1"> <a href="https://vk.com/artist/inflames"> ABOUT</a></li>
+        <li class ="menu1"> <a href="#plansaita"> PLAN</a></li>
+        <li class ="menu1">  <a href="#conec"> CONTACTS</a></li>
        </ul>
-         
-       <div class = " PhotoSecond">
+    </nav>
+</header>
+
+<div class = " PhotoSecond">
 <h1 class = "imgSecond">
     Найдите то что вам нужно !
 </h1>
@@ -60,7 +73,7 @@
     </div>
 
     <div class = "classTextCategory">
-        <h1 class="TextCategory">
+        <h1 id = "categoriayPhoto" class="TextCategory">
             Выберите нужную категорию
            </h1>
     </div>
@@ -116,7 +129,7 @@
   <br>
   
   <!-- The dots/circles -->
-  <div style="text-align:center">
+  <div class = "Alldot" style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
@@ -124,124 +137,58 @@
     <span class="dot" onclick="currentSlide(5)"></span>
     <span class="dot" onclick="currentSlide(6)"></span>
   </div>
-   
-          
 
 
-
-
-
-
+  <div class = "CategoryAll">
+    <h1 id = "allCategorii" class="AllCategory">
+        Все категории
+    </h1>
+    <div class = "muzei">
+        <a href="categorii.html"> <img class = "muzeiimg"  src="trueimg/muzei-58.jpg" alt = "sddsasadsadadas">
+        <div class ="dws-text">
+            <h1>
+Посмотреть все категории
+            </h1>
+        </div>       
+     </a>
+        
     </div>
-
-
-        <aside class="lil-font" id ="shop">
-            <h3 class = "novosti" > Новостная лента</h3>
-            
-           
-        
-        </aside>
-
-
-
-        
-      
-          
-        <aside>
-            Топ-5 игроков «Зенита» по показателю «гол+пас» в российской истории выглядит следующим образом:  
-        </aside>
-    
-    
-
-<!--    
-    <article> 
-        <figure id = "ker">
-            <figcaption>1. Александр Кержаков — 228 очков (163+65)</figcaption>
-        <p><img src="image\Kerzachello1.png" /></p>
-        
-    </figure>
-    <figure id = "ars">
-        <figcaption>2. Андрей Аршавин — 225 (80+145)</figcaption>
-        <p><img src="image\ars.png"  /></p>
-        
-    </figure>
-    <figure id = "dz">
-        <figcaption>3. Артем Дзюба — 157 (95+62)</figcaption>
-        <p><img src="image\dz.png" /></p>
-        
-    </figure>
-    <figure id = "dan">
-        <figcaption>4. Данни — 156 (68+88)</figcaption>
-        <p><img src="image\danni1.png" /></p>
-        
-    </figure>
-    <figure>
-        <figcaption>5. Халк — 143 (77+66)</figcaption>
-        <p id = "hulk"><img src="image\hulk1.png" /></p>
-        
-    </figure>
-    </article>
-</h2>
-    <h2 id = "Предстоящиематчи">
-        Предстоящие матчи:
-      <ul>
-      <li> Рубин </li>
-      <li> Динамо </li>
-      <li>Локомотив</li>
-      <li>Сочи </li>
-      <li>ЦСКА</li>
-      </ul>  
-    </h2>
-    <h2 id="Предыдущиематчи">
-        Предыдущие матчи:
-    
-    <p>Выберите матч:</p>
-  <p><input list="match">
-   <datalist id="match">
-    <option value="Рубин"></option>
-    <option value="Бетис"></option>
-    <option value="Челси"></option>
-    <option value="Динамо"></option>
-    <option value="Локомотив"></option>
-   </datalist></p>
-</h2> 
-    <h2>Тренер ФК Зенит Сергей Семак о чемпионстве стиле и семье Вечерний Ургант 17 06 2019</h2>   
-    <audio controls>
-        <source src="semak.mp3" type="audio/ogg; codecs=vorbis">
-        <source src="semak.mp3" type="audio/mpeg">
-        Тег audio не поддерживается вашим браузером. 
-        <a href="audio/music.mp3">Скачайте музыку</a>.
-      </audio>
-      <br>
-      <h2 >Лучшие голы Зенита за 2021 год!</h2>
-          
-    
-      <video controls >
-        <source src="Лучшие голы «Зенита» в 2021 году (online-video-cutter.com).mp4" >
-    </video>
-    <aside class ="jies">
-        Обязательно оставь комментарий &#9998; &#128386; 
-        <br>&#8617;
-    </aside>
-    <footer>
-  
-        <textarea>
-            Ваши комментарии
-        </textarea>
-    -->   
    
+</div>
+
+<img id="plansaita" src="trueimg/vibor1.jpg" class ="vibor">
+<div class = "plan">
+    
+        <h1  class="Cplan"> 
+
+            Как скачать нужное фото
+        </h1>
+        <h3 class =" Cplan2">
+            На главной страницы можно выбрать категории фотографий и перейти к нужным, среди категорий нужно найти нужную и далее выбрав фотографию нажать на кнопку "скачать фотографию". Вы обязательно найдёте что ищете!
+        </h3>
+       
+</div>
+
+
+
+</div>
+
 
 </footer>
 <hr/>
     Об авторе (ссылка в ВК)
-    <a href="https://vk.com/sectumsempre"> <img src="image\vk.png"width="100" height="100" /> </a> 
-    <br>
+    <a href="https://vk.com/sectumsempre" id = "conec"> <img src="image\vk.png"width="100" height="100" /> </a> 
+    <br >
     Контактный номер: 89100905824
     <br>
     <span>&copy Copyright by Creator </span>
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="JS/jQuere/jQuere.js"></script>
     <script src="Untitled-1.js"></script>
+  
+    
+    
     
 </body>
 </html>
